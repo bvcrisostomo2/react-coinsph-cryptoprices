@@ -11,8 +11,8 @@ export class MarketPrices extends Component {
   render() {
     return (
       <div>
-        <div style={{ width: "70%", margin: "auto" }}>
-          <Grid className="frist-grid">
+        <div style={{ height: "100%", width: "70%", margin: "auto" }}>
+          <Grid className="first-grid">
             <Cell col={6} tablet={4}>
               <Xrp />
             </Cell>
@@ -21,7 +21,7 @@ export class MarketPrices extends Component {
             </Cell>
           </Grid>
 
-          <Grid className="second-grd">
+          <Grid className="second-grid">
             <Cell col={6} tablet={4}>
               <Bch />
             </Cell>

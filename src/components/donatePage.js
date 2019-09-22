@@ -5,14 +5,7 @@ export class DonatePage extends Component {
   render() {
     return (
       <div>
-        Icons made by{" "}
-        <a href="https://www.flaticon.com/authors/freepik" title="Freepik">
-          Freepik
-        </a>{" "}
-        from{" "}
-        <a href="https://www.flaticon.com/" title="Flaticon">
-          www.flaticon.com
-        </a>
+        <h3>Bitcoin Address</h3>3QVw6mC9M556bnZPaQfv7oC8ox4z7hTTUk
       </div>
     );
   }
