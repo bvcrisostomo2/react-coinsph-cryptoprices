@@ -11,7 +11,7 @@ export class MarketPrices extends Component {
   render() {
     return (
       <div>
-        <div style={{ width: "80%", margin: "auto" }}>
+        <div style={{ width: "70%", margin: "auto" }}>
           <Grid className="frist-grid">
             <Cell col={6} tablet={4}>
               <Xrp />

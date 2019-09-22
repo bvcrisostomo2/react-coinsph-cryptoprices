@@ -9,7 +9,8 @@ import {
   Icon
 } from "react-mdl";
 
-import MarketPrices from "./marketPrices";
+import mainContent, { MainContent } from "./mainContent";
+import { Link } from "react-router-dom";
 
 export class Navbar extends Component {
   state = {};
@@ -20,17 +21,17 @@ export class Navbar extends Component {
           <Header
             title={
               <span>
-                <span style={{ color: "#ddd" }}>Area / </span>
-                <strong>The Title</strong>
+                <span style={{ color: "#ddd" }}>Coins.ph</span>
+                <strong> Prices</strong>
               </span>
             }
           >
             <Navigation>
-              <a href="#">About</a>
-              <a href="#">Donate</a>
+              <Link to="/">About</Link>
+              <Link to="/donate">Donate</Link>
             </Navigation>
           </Header>
-          <MarketPrices />
+          <MainContent />
         </Layout>
       </div>
     );
