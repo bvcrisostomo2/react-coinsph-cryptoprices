@@ -1,14 +1,47 @@
 html,
 body {
   height: 100%;
+  background: #eef0f2;
+}
+h1,
+h2,
+h3,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+p {
+  font-family: "Abel", sans-serif;
 }
 
+.primary-font {
+  font-family: "Poppins", sans-serif;
+}
+.secondary-font {
+  font-family: "Abel", sans-serif;
+}
+
+.buy-font {
+  color: #08b889;
+  font-family: "Abel", sans-serif;
+}
+.sell-font {
+  color: #de214c;
+  font-family: "Abel", sans-serif;
+}
+.footer-style {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin-top: 180px;
+}
+/*
 .footer-style {
   position: absolute;
   left: 0;
   bottom: 0;
   right: 0;
-}
+}*/
 .qr-img {
   height: 250px;
 }
