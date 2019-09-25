@@ -6,7 +6,14 @@ export class DonatePage extends Component {
   render() {
     return (
       <div>
-        <div style={{ width: "80%", marginTop: "12vh", marginLeft: "auto" }}>
+        <div
+          style={{
+            width: "80%",
+            marginTop: "12vh",
+            marginLeft: "auto",
+            marginRight: "auto"
+          }}
+        >
           <Grid>
             <Cell col={6}>
               <div style={{ margin: "auto" }}>
