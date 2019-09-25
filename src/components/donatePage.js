@@ -6,7 +6,7 @@ export class DonatePage extends Component {
   render() {
     return (
       <div>
-        <div style={{ width: "80%", margin: "auto" }}>
+        <div style={{ width: "80%", marginTop: "12vh", marginLeft: "auto" }}>
           <Grid>
             <Cell col={6}>
               <div style={{ margin: "auto" }}>
@@ -16,7 +16,25 @@ export class DonatePage extends Component {
                   alt="QR CODE"
                   className="qr-img"
                 />
-                <div>3QVw6mC9M556bnZPaQfv7oC8ox4z7hTTUk</div>
+                <div>
+                  <p>3QVw6mC9M556bnZPaQfv7oC8ox4z7hTTUk</p>
+                </div>
+              </div>
+            </Cell>
+            <Cell col={6}>
+              <div style={{ margin: "auto" }}>
+                <h3>XRP Address</h3>
+                <img
+                  src={require("../images/xrp-address.png")}
+                  alt="QR CODE"
+                  className="qr-img"
+                />
+                <div>
+                  <p>rU2mEJSLqBRkYLVTv55rFTgQajkLTnT6mA</p>
+                </div>
+                <div>
+                  <p>Destination Tag: 246152</p>
+                </div>
               </div>
             </Cell>
           </Grid>
