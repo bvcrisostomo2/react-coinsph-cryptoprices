@@ -2,11 +2,11 @@ import React from "react";
 //import logo from "./logo.svg";
 import "./App.css";
 
-import Navbar from "./components/navbar";
+import NavbarMainFooter from "./components/navbarMainFooter";
 function App() {
   return (
     <div>
-      <Navbar />
+      <NavbarMainFooter />
     </div>
   );
 }
