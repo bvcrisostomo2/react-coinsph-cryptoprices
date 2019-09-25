@@ -9,6 +9,9 @@ body {
   bottom: 0;
   right: 0;
 }
+.qr-img {
+  height: 250px;
+}
 
 @media (max-width: 600px) {
   .footer-style {
