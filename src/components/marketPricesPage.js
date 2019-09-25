@@ -11,7 +11,14 @@ export class MarketPricesPage extends Component {
   render() {
     return (
       <div>
-        <div style={{ height: "100%", width: "80%", margin: "auto" }}>
+        <div
+          style={{
+            height: "100%",
+            width: "100%",
+            marginTop: "12vh",
+            marginLeft: "auto"
+          }}
+        >
           <Grid className="first-grid">
             <Cell col={6} tablet={4}>
               <Xrp />

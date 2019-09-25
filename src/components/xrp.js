@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Card, CardActions, CardText, CardTitle, Button } from "react-mdl";
 
 export class Xrp extends Component {
   state = {
@@ -44,12 +45,24 @@ export class Xrp extends Component {
   render() {
     return (
       <div>
-        {/*<h1>Symbol: {this.state.symbol}</h1>
-        <h1>currency: {this.state.currency}</h1>*/}
-
-        <h5>XRP</h5>
-        <h4>Sell: {this.state.bid}</h4>
-        <h4>Buy: {this.state.ask}</h4>
+        <Card
+          shadow={0}
+          style={{ width: "320px", height: "300px", margin: "auto" }}
+        >
+          <CardTitle
+            expand
+            style={{
+              color: "#00000",
+              background: "url() bottom right 15% no-repeat #fff"
+            }}
+          >
+            XRP
+          </CardTitle>
+          <CardText>
+            <h4 className="sell-font">Sell: {this.state.bid}</h4>
+            <h4 className="buy-font">Buy: {this.state.ask}</h4>
+          </CardText>
+        </Card>
       </div>
     );
   }
