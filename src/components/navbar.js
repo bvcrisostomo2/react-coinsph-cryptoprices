@@ -3,7 +3,7 @@ import { Layout, Header, Navigation, Content } from "react-mdl";
 
 import { MainContent } from "./mainContent";
 import { Link } from "react-router-dom";
-import { FooterComponent } from "./footerComponent";
+//import { FooterComponent } from "./footerComponent";
 
 export class Navbar extends Component {
   state = {};
