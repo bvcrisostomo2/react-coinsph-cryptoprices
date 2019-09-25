@@ -47,7 +47,7 @@ export class Xrp extends Component {
       <div>
         <Card
           shadow={0}
-          style={{ width: "320px", height: "300px", margin: "auto" }}
+          style={{ width: "320px", height: "320px", margin: "auto" }}
         >
           <CardTitle
             expand
