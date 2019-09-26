@@ -14,10 +14,11 @@ export class NavbarMainFooter extends Component {
           <Header
             title={
               <span>
-                <span style={{ color: "#ddd" }}>Coins.ph</span>
+                <span style={{ color: "#fff" }}>Coins.ph</span>
                 <strong> Prices</strong>
               </span>
             }
+            style={{ background: "#00a075" }}
           >
             <Navigation>
               <Link to="/">Prices</Link>

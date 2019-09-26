@@ -21,7 +21,7 @@ export class Xrp extends Component {
     //const country = e.target.elements.country.value;
     const api_call = await fetch(`https://quote.coins.ph/v1/markets`);
     const data = await api_call.json();
-    console.log(data);
+    //console.log(data);
 
     this.setState({
       symbol: data.markets[19].symbol,
@@ -38,31 +38,17 @@ export class Xrp extends Component {
       function() {
         this.componentDidMount();
       }.bind(this),
-      3000
+      10000
     );
   }
 
   render() {
     return (
-      <div>
-        <Card
-          shadow={0}
-          style={{ width: "320px", height: "320px", margin: "auto" }}
-        >
-          <CardTitle
-            expand
-            style={{
-              color: "#00000",
-              background: "url() bottom right 15% no-repeat #fff"
-            }}
-          >
-            XRP
-          </CardTitle>
-          <CardText>
-            <h4 className="sell-font">Sell: {this.state.bid}</h4>
-            <h4 className="buy-font">Buy: {this.state.ask}</h4>
-          </CardText>
-        </Card>
+      <div className="crypto-container">
+        <h5>XRP</h5>
+        <h4 className="sell-font">Sell: {this.state.bid}</h4>
+        <h4 className="buy-font">Buy: {this.state.ask}</h4>
+        <p>(Price in PHP)</p>
       </div>
     );
   }

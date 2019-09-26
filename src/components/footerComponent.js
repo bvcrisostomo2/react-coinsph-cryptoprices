@@ -6,15 +6,19 @@ export class FooterComponent extends Component {
   render() {
     return (
       <div>
-        <Footer size="mini" className="footer-style">
+        <Footer
+          size="mini"
+          className="footer-style"
+          style={{ background: "#8a9199" }}
+        >
           <FooterSection
             type="left"
             logo="© 2019 coinsphprices"
           ></FooterSection>
           <FooterSection type="left" logo="Resources">
             <FooterLinkList>
-              <div>React-MDL</div>
-              <div>
+              <div style={{ color: "#fff" }}>React-MDL</div>
+              <div style={{ color: "#fff" }}>
                 Icons made by{" "}
                 <a
                   href="https://www.flaticon.com/authors/freepik"
@@ -27,6 +31,8 @@ export class FooterComponent extends Component {
                   www.flaticon.com
                 </a>
               </div>
+              <div style={{ color: "#fff" }}>Google Fonts</div>
+              <div style={{ color: "#fff" }}>api.coins.asia</div>
             </FooterLinkList>
           </FooterSection>
         </Footer>

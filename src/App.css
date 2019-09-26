@@ -1,32 +1,33 @@
 html,
 body {
   height: 100%;
-  background: #eef0f2;
+  background: #fcfcfc;
 }
 h1,
 h2,
 h3,
-h6 {
-  font-family: "Poppins", sans-serif;
+h4,
+h5 {
+  /*font-family: "Poppins", sans-serif;*/
+  font-family: "Libre Franklin", sans-serif;
+  color: #666769;
 }
 p {
   font-family: "Abel", sans-serif;
-}
-
-.primary-font {
-  font-family: "Poppins", sans-serif;
-}
-.secondary-font {
-  font-family: "Abel", sans-serif;
+  color: #8a9199;
 }
 
 .buy-font {
   color: #08b889;
-  font-family: "Abel", sans-serif;
 }
 .sell-font {
-  color: #de214c;
-  font-family: "Abel", sans-serif;
+  color: #08b889;
+}
+
+.crypto-container {
+  border: 1px solid #08b889;
+  border-radius: 10px;
+  padding: 20px;
 }
 .footer-style {
   position: relative;
@@ -35,13 +36,7 @@ p {
   right: 0;
   margin-top: 180px;
 }
-/*
-.footer-style {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}*/
+
 .qr-img {
   height: 250px;
 }
@@ -52,5 +47,9 @@ p {
     left: 0;
     bottom: 0;
     right: 0;
+  }
+
+  .qr-img {
+    height: 250px;
   }
 }

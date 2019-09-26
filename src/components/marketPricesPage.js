@@ -14,9 +14,10 @@ export class MarketPricesPage extends Component {
         <div
           style={{
             height: "100%",
-            width: "100%",
+            width: "80%",
             marginTop: "12vh",
-            marginLeft: "auto"
+            marginLeft: "auto",
+            marginRight: "auto"
           }}
         >
           <Grid className="first-grid">
