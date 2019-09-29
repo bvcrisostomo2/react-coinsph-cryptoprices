@@ -9,6 +9,7 @@ I recently got into cryptocurrency and then I decided to create this web app. I 
 # Screenshots
 
 ![Prices Page](https://res.cloudinary.com/bvcrisostomo/image/upload/v1569715605/coinsph%20prices/Screenshot1.jpg)
+![Donate Page](https://res.cloudinary.com/bvcrisostomo/image/upload/v1569715959/coinsph%20prices/Screenshot2.jpg)
 
 # Frameworks
 
