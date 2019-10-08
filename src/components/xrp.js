@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Card, CardActions, CardText, CardTitle, Button } from "react-mdl";
 
 export class Xrp extends Component {
   state = {
@@ -38,7 +37,7 @@ export class Xrp extends Component {
       function() {
         this.componentDidMount();
       }.bind(this),
-      10000
+      3000
     );
   }
 

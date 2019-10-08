@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Card, CardActions, CardText, CardTitle, Button } from "react-mdl";
+
 export class Bch extends Component {
   state = {
     symbol: undefined,
@@ -35,7 +35,7 @@ export class Bch extends Component {
       function() {
         this.componentDidMount();
       }.bind(this),
-      10000
+      3000
     );
   }
 
