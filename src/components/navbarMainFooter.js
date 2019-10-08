@@ -12,6 +12,7 @@ export class NavbarMainFooter extends Component {
       <div>
         <Layout fixedHeader>
           <Header
+            scroll
             title={
               <span>
                 <span style={{ color: "#fff" }}>Coins.ph</span>
