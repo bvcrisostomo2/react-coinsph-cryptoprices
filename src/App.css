@@ -36,9 +36,33 @@ p {
   right: 0;
   margin-top: 180px;
 }
-
+/*donate page*/
 .qr-img {
   height: 250px;
+}
+/* section one landing page */
+.landing-section-one {
+  padding: 200px;
+  align-content: center;
+}
+
+/* button in section 1 */
+.button-landing {
+  border: 1px solid #08b889;
+  padding: 10px;
+  background: #fcfcfc;
+  color: #08b889;
+  transition-duration: 0.4s;
+}
+.button-landing:hover {
+  background-color: #4caf50;
+  transition-duration: 0.4s;
+  color: white;
+}
+/*section two landing page */
+.landing-section-two {
+  background: #08b889;
+  padding: 200px;
 }
 
 @media (max-width: 600px) {
