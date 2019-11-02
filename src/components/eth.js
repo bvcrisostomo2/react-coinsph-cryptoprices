@@ -7,7 +7,8 @@ export class Eth extends Component {
     product: undefined,
     bid: undefined,
     ask: undefined,
-    expires_in_seconds: undefined
+    expires_in_seconds: undefined,
+    timer: undefined
   };
   componentDidMount() {
     this.getMarket();
@@ -31,12 +32,15 @@ export class Eth extends Component {
   };
 
   refreshPage() {
-    setTimeout(
+    this.timer = setTimeout(
       function() {
         this.componentDidMount();
       }.bind(this),
-      3000
+      5000
     );
+  }
+  componentWillUnmount() {
+    clearTimeout(this.timer);
   }
 
   render() {
