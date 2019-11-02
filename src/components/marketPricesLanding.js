@@ -6,30 +6,16 @@ import Eth from "./eth";
 
 import { Grid, Cell } from "react-mdl";
 
-export class MarketPricesPage extends Component {
-  /* state = { _isMounted: false };*/
-
-  componentDidMount() {
-    /* this.setState({
-      _isMounted: true
-    });*/
-    console.log("parent mounted");
-  }
-  componentWillUnmount() {
-    /* this.setState({
-      _isMounted: false
-    });*/
-
-    console.log("parent unmounted");
-  }
+export class MarketPricesLanding extends Component {
+  state = {};
   render() {
     return (
       <div>
         <div
           style={{
             height: "100%",
-            width: "80%",
-            marginTop: "12vh",
+            width: "100%",
+            marginTop: "auto",
             marginLeft: "auto",
             marginRight: "auto"
           }}
@@ -57,4 +43,4 @@ export class MarketPricesPage extends Component {
   }
 }
 
-export default MarketPricesPage;
+export default MarketPricesLanding;

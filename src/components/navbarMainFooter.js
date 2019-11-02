@@ -12,11 +12,12 @@ export class NavbarMainFooter extends Component {
       <div>
         <Layout fixedHeader>
           <Header
-            scroll
             title={
               <span>
-                <span style={{ color: "#fff" }}>Coins.ph</span>
-                <strong> Prices</strong>
+                <Link to="/landing" style={{ textDecoration: "none" }}>
+                  <span style={{ color: "#fff" }}>Coins.ph </span>
+                </Link>
+                <strong>Prices</strong>
               </span>
             }
             style={{ background: "#00a075" }}
