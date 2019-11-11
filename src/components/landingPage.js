@@ -29,7 +29,7 @@ export class LandingPage extends Component {
                   <h5 className="header-landing-1">
                     A convenient way to track market prices from Coins.ph!
                   </h5>
-                  <Link to="/">
+                  <Link to="/prices">
                     <button className="button-landing">Check Prices!</button>
                   </Link>
                 </div>

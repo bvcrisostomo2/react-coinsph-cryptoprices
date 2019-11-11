@@ -14,7 +14,7 @@ export class NavbarMainFooter extends Component {
           <Header
             title={
               <span>
-                <Link to="/landing" style={{ textDecoration: "none" }}>
+                <Link to="/" style={{ textDecoration: "none" }}>
                   <span style={{ color: "#fff" }}>Coins.ph </span>
                 </Link>
                 <strong>Prices</strong>
@@ -23,7 +23,7 @@ export class NavbarMainFooter extends Component {
             style={{ background: "#00a075" }}
           >
             <Navigation>
-              <Link to="/">Prices</Link>
+              <Link to="/prices">Prices</Link>
               <Link to="/donate">Donate</Link>
             </Navigation>
           </Header>
