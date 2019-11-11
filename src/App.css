@@ -47,22 +47,27 @@ p {
 .landing-section-one {
   align-content: center;
 }
+.landing-image {
+  height: 250px;
+}
+
 .header-landing-1 {
   text-align: left;
 }
 
 /* button in section 1 */
 .button-landing {
-  border: 1px solid #08b889;
-  padding: 10px;
-  background: #fcfcfc;
-  color: #08b889;
+  border: 2px solid #08b889;
+  border-radius: 5px;
+  padding: 20px 40px;
+  background: #08b889;
+  color: #fcfcfc;
   transition-duration: 0.4s;
 }
 .button-landing:hover {
-  background-color: #4caf50;
+  background-color: #fcfcfc;
   transition-duration: 0.4s;
-  color: white;
+  color: #08b889;
 }
 /*section two landing page */
 .landing-section-two {
@@ -84,6 +89,19 @@ p {
 
 .why-image {
   height: 200px;
+}
+
+/* section three */
+.landing-section-three {
+  margin: 5vh;
+}
+.donate-section-three {
+  align-content: center;
+  text-align: center;
+}
+
+.links {
+  color: #08b889;
 }
 
 @media (max-width: 600px) {
