@@ -115,4 +115,8 @@ p {
   .qr-img {
     height: 250px;
   }
+
+  .why-image {
+    height: 100px;
+  }
 }
