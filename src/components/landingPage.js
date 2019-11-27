@@ -19,7 +19,7 @@ export class LandingPage extends Component {
                   }}
                 >
                   <img
-                    src={require("../images/value.png")}
+                    src={require("../images/global.png")}
                     alt="value"
                     className="landing-image"
                   />

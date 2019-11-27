@@ -119,4 +119,13 @@ p {
   .why-image {
     height: 100px;
   }
+  .landing-image {
+    height: 100px;
+  }
+
+  .crypto-container {
+    border: 1px solid #08b889;
+    border-radius: 10px;
+    padding: 20px;
+  }
 }
