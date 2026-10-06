@@ -10,38 +10,39 @@ export class Bch extends Component {
     expires_in_seconds: undefined,
     timer: undefined
   };
-  componentDidMount() {
-    this.getMarket();
-    this.refreshPage();
-  }
-  getMarket = async () => {
-    //const city = e.target.elements.city.value;
-    //const country = e.target.elements.country.value;
-    const api_call = await fetch(`https://quote.coins.ph/v1/markets`);
-    const data = await api_call.json();
-    //console.log(data);
+  // The quote.coins.ph API no longer exists, so fetching and auto-refresh are disabled.
+  // componentDidMount() {
+  //   this.getMarket();
+  //   this.refreshPage();
+  // }
+  // getMarket = async () => {
+  //   //const city = e.target.elements.city.value;
+  //   //const country = e.target.elements.country.value;
+  //   const api_call = await fetch(`https://quote.coins.ph/v1/markets`);
+  //   const data = await api_call.json();
+  //   //console.log(data);
 
-    this.setState({
-      symbol: data.markets[0].symbol,
-      currency: data.markets[0].currency,
-      product: data.markets[0].product,
-      bid: data.markets[0].bid,
-      ask: data.markets[0].ask,
-      expires_in_seconds: data.markets[0].expires_in_seconds
-    });
-  };
+  //   this.setState({
+  //     symbol: data.markets[0].symbol,
+  //     currency: data.markets[0].currency,
+  //     product: data.markets[0].product,
+  //     bid: data.markets[0].bid,
+  //     ask: data.markets[0].ask,
+  //     expires_in_seconds: data.markets[0].expires_in_seconds
+  //   });
+  // };
 
-  refreshPage() {
-    this.timer = setTimeout(
-      function() {
-        this.componentDidMount();
-      }.bind(this),
-      5000
-    );
-  }
-  componentWillUnmount() {
-    clearTimeout(this.timer);
-  }
+  // refreshPage() {
+  //   this.timer = setTimeout(
+  //     function() {
+  //       this.componentDidMount();
+  //     }.bind(this),
+  //     5000
+  //   );
+  // }
+  // componentWillUnmount() {
+  //   clearTimeout(this.timer);
+  // }
 
   render() {
     return (
