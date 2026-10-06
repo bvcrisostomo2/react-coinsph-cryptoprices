@@ -11,39 +11,40 @@ export class Xrp extends Component {
     timer: undefined
   };
 
-  componentDidMount() {
-    this.getMarket();
-    this.refreshPage();
-  }
+  // The quote.coins.ph API no longer exists, so fetching and auto-refresh are disabled.
+  // componentDidMount() {
+  //   this.getMarket();
+  //   this.refreshPage();
+  // }
 
-  getMarket = async () => {
-    //const city = e.target.elements.city.value;
-    //const country = e.target.elements.country.value;
-    const api_call = await fetch(`https://quote.coins.ph/v1/markets`);
-    const data = await api_call.json();
-    //console.log(data);
+  // getMarket = async () => {
+  //   //const city = e.target.elements.city.value;
+  //   //const country = e.target.elements.country.value;
+  //   const api_call = await fetch(`https://quote.coins.ph/v1/markets`);
+  //   const data = await api_call.json();
+  //   //console.log(data);
 
-    this.setState({
-      symbol: data.markets[19].symbol,
-      currency: data.markets[19].currency,
-      product: data.markets[19].product,
-      bid: data.markets[19].bid,
-      ask: data.markets[19].ask,
-      expires_in_seconds: data.markets[19].expires_in_seconds
-    });
-  };
+  //   this.setState({
+  //     symbol: data.markets[19].symbol,
+  //     currency: data.markets[19].currency,
+  //     product: data.markets[19].product,
+  //     bid: data.markets[19].bid,
+  //     ask: data.markets[19].ask,
+  //     expires_in_seconds: data.markets[19].expires_in_seconds
+  //   });
+  // };
 
-  refreshPage() {
-    this.timer = setTimeout(
-      function() {
-        this.componentDidMount();
-      }.bind(this),
-      5000
-    );
-  }
-  componentWillUnmount() {
-    clearTimeout(this.timer);
-  }
+  // refreshPage() {
+  //   this.timer = setTimeout(
+  //     function() {
+  //       this.componentDidMount();
+  //     }.bind(this),
+  //     5000
+  //   );
+  // }
+  // componentWillUnmount() {
+  //   clearTimeout(this.timer);
+  // }
 
   render() {
     return (
